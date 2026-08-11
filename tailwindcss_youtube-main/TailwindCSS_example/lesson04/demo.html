@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['georgia']">
+    <header class="flex h-36 justify-center items-center  bg-brack px-4 sm;h-44">
+        <h1 class="flex h-full items-center justify-center">
+            <img 
+                src="imgs/Hunter_x_hunter.png" 
+                alt="HUNTERxHUNTER" 
+                class="max-h-28 w-auto max-w-[85vw] object-contain sm:max-h-36"
+            >
+        </h1>
+    </header>
+
+    <main>
+        <h1 class="flex justify-center items-center h-12 bg-blue-300">main</h1>
+        <section class="sm:flex">
+            <section id="left" class="w-full sm:w-1/4 p-2">
+                <nav>
+                    <h2>menu</h2>
+                    <ul>
+                        <li class="hover:bg-blue-500 hover:text-white"><a href="#about" >作品紹介</a></li>
+                        <li class="hover:bg-blue-500 hover:text-white"><a href="#characters" >キャラクター</a></li>
+                        <li class="hover:bg-blue-500 hover:text-white"><a href="#arcs" >ストーリー</a></li>
+                        <li class="hover:bg-blue-500 hover:text-white"><a href="#favorite" >好きな編</a></li>
+                    </ul>
+                </nav>
+            </section>
+    
+            <section id="right" class="flex flex-wrap justify-around items-start w-full p-2 sm:border-t-0 border-t-4 sm:border-l-4 border-blue-100">
+                <section id="about" class="">
+                    <h2>作品紹介</h2>
+                </section>
+                
+                <section id="character" class="">
+                    <p>キャラクター紹介</p>
+
+                    <section class="w-64">
+                        <h2 class="mb-2 text-xl font-bold">ゴン</h2>
+                        <div class="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                            <img 
+                                src="imgs/Gon.png" 
+                                alt="ゴン=フリークス" 
+                                class="w-full h-full  object-cover object-center"
+                            >
+                        </div>
+                        <p class="mt-2">好奇心旺盛で仲間思いの少年</p>
+                    </section>
+                    <section class="w-64">
+                        <h2 class="mb-2 text-xl font-bold">キルア</h2>
+                        <div class="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                            <img 
+                                src="imgs/Killua.jpg" 
+                                alt="キルア=ゾルディック" 
+                                class="w-full h-full  object-cover object-center"
+                            >
+                        </div>
+                        <p class="mt-2">暗殺一家の期待の星</p>
+                    </section>
+                    <section class="w-64">
+                        <h2 class="mb-2 text-xl font-bold">クラピカ</h2>
+                        <div class="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                            <img 
+                                src="imgs/Kurapika.png" 
+                                alt="クラピカ" 
+                                class="w-full h-full  object-cover object-center"
+                            >
+                        </div>
+                        <p class="mt-2">クルタ族の生き残り</p>
+                    </section>
+                    <section class="w-64">
+                        <h2 class="mb-2 text-xl font-bold">レオリオ</h2>
+                        <div class="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                            <img 
+                                src="imgs/Leorio.jpeg" 
+                                alt="レオリオ" 
+                                class="w-full h-full  object-cover object-center"
+                            >
+                        </div>
+                        <p class="mt-2">医者を目指してハンターを志望</p>
+                    </section>
+                </section>
+                <section  id="arcs">ストーリー</section>
+                <section  id="favorite">好きな編</section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="flex justify-center bg-green-300">
+        <h1>footer</h1>
+    </footer>
+
+</body>
+</html>
