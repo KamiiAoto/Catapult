@@ -27,11 +27,60 @@
 
     <footer></footer>
     <script>
-   
-   
+        $("#gu_btn").on("click", function(){
+            const pc_hands = Math.ceil(Math.random()*3);
+            if(pc_hands==1){
+                $("#pc_hands").text("グー");
+                $("#judgment").text("あいこ");
+            }
+            else if (pc_hands==2){
+                $("#pc_hands").text("チョキ");
+                $("#judgment").text("あなたの勝ち");
+            }
+
+            else {
+                $("#pc_hands").text("パー");
+                $("#judgment").text("あなたの負け");
+            }
+        })
+
+        $("#cho_btn").on("click", function(){
+            const pc_hands = Math.ceil(Math.random()*3);
+            if(pc_hands==1){
+                $("#pc_hands").text("グー");
+                $("#judgment").text("あなたの負け");
+            }
+            else if (pc_hands==2){
+                $("#pc_hands").text("チョキ");
+                $("#judgment").text("あいこ");
+            }
+
+            else {
+                $("#pc_hands").text("パー");
+                $("#judgment").text("あなたの勝ち");
+            }
+        })
+
+        $("#par_btn").on("click", function(){
+            const pc_hands = Math.ceil(Math.random()*3);
+            if(pc_hands==1){
+                $("#pc_hands").text("グー");
+                $("#judgment").text("あなたの勝ち");
+            }
+            else if (pc_hands==2){
+                $("#pc_hands").text("チョキ");
+                $("#judgment").text("あなたの負け");
+            }
+
+            else {
+                $("#pc_hands").text("パー");
+                $("#judgment").text("あいこ");
+            }
+        })
+        let pc_hands;
 
 
-   
+    
     </script>
 </body>
 
