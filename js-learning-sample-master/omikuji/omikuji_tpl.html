@@ -15,33 +15,37 @@
 
 <main>
     <ul>
-        <li id="hoshi">おみくじを引く</li>
+        <li id="omikuji">おみくじを引く</li>
     </ul>
     <p id="echo"></p>
 </main>
 
 <footer>フッター</footer>
 <script>
-    const r=Math.ceil(Math.random()*5);
+    $("#omikuji").on("click", function(){
+        
+        const r = Math.ceil(Math.random()*5);
+
+        let view = "";
+        if(r==1){
+            view = '<img src="img/daikiti.png" width="300">';
+        }
+        if(r==2){
+            view = '中吉';
+        }
+        if(r==3){
+            view = '小吉';
+        }
+        if(r==4){
+            view = '末吉';
+        }
+        if(r==5){
+            view = '凶';
+        }
+
+        $("#echo").html(view);
+    })
     let view;
-    if(r==1){
-        view="大吉"
-    }
-    if(r==2){
-        view="中吉"
-    }
-    if(r==3){
-        view="小吉"
-    }
-    if(r==4){
-        view="末吉"
-    }
-    if(r==5){
-        view="凶"
-    }
-    alert(view);
-
-
 </script>
 </body>
 </html>
